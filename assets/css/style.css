@@ -1721,3 +1721,62 @@ textarea.input-field {
 /**
  * responsive for larger than 1200px screen
  */
+
+ @media (min-width: 1200px) {
+  /**
+   * REUSED STYLE
+   */
+
+  .container {
+    max-width: 1200px;
+  }
+
+  /**
+   * HERO
+   */
+
+  .hero {
+    min-height: 770px;
+  }
+
+ 
+  .promo .promo-item {
+    min-width: calc(25% - 7.5px);
+  }
+
+ 
+
+  .about .container {
+    gap: 60px;
+  }
+
+  
+
+  .cta {
+    --section-padding: 60px;
+  }
+
+  .cta .section-title {
+    max-width: 18ch;
+  }
+
+
+
+  .banner-md .banner-item-content {
+    left: 55%;
+  }
+
+ 
+
+  .footer-top .container {
+    grid-template-columns: 1.4fr 1fr 1fr 1.6fr;
+  }
+
+  .footer-form {
+    margin-top: 2px;
+  }
+
+  .footer-list {
+    padding-top: 30px ;
+  }
+}
