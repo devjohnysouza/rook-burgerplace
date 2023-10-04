@@ -42,7 +42,19 @@ window.addEventListener("scroll", function() {
 /**
  * search box toggle
  */
+const searchBtn = document.querySelector("[data-search-btn]");
+const searchContainer = document.querySelector("[data-search-container]");
+const searchSunmitBtn = document.querySelector("[data-search-submit-btn]");
+const searchCloseBtn = document.querySelector("[data-search-close-btn]");
 
+const searchBoxElems = [searchBtn, searchSunmitBtn, searchCloseBtn];
+
+for (let i = 0; i < searchBoxElems.length;  i++) {
+  searchBoxElems[i].addEventListener("click", function () {
+    searchContainer.classList.toggle("active");
+    document.body.classList.toggle("active");
+  });
+}
 
 
 
