@@ -184,9 +184,63 @@ body.active { overflow: hidden; }
    padding-inline: 15px; 
   }
 
+  .h1, .h2, .h3, .h4 {
+    font-family: var(--ff-rubik);
+    color: var(--rich-black-fogra-29);
+     line-height: 1.2;
+    letter-spacing: -1px;
+  }
 
+  .h1, .h2 {
+    font-size: var(--fs-1);
+  }
 
+  .h2, .h3, .h4 {
+    font-weight: var(--fw-600);
+  }
 
+  .h3 {
+    font-size: var(--fs-2);
+  }
+
+  .h4 {
+    font-size: var(--fs-3);
+  }
+
+  .btn {
+    background-color: var(--bg-color, var(--deep-saffron));
+    color: var(--white);
+    font-family: var(--ff-rubik);
+    font-size: var(--fs-4);
+    font-weight: var(--fw-500);
+    height: var(--height, 45px);
+    padding-inline: var(--padding-inline, 35px);
+    transition: var(--transition-1);
+  }
+
+  .btn-hover {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .btn-hover::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 20px;
+    width: 1px;
+    height: 1px;
+    transform: translate(-50%, 51%) scale(var(--scale, 1));
+    border-radius: 50%;
+    background-color: var(--rich-black-fogra-29);
+    z-index: -1;
+    transition: var(--transition-2);
+  }
+
+  .btn-hover:is(:hover, :focus)::after {
+    --scale: 500;
+  }
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
