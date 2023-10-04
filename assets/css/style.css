@@ -258,7 +258,9 @@ body.active {
 .btn-hover:is(:hover, :focus)::after {
   --scale: 500;
 }
-
+.section {
+  padding-block: var(--section-padding);
+}
 .section.white {
   background-color: var(--isabelline);
 }
