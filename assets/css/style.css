@@ -763,7 +763,7 @@ body.active {
   margin-block-end: 40px;
 }
 
-.fiter-btn {
+.filter-btn {
   background-color: var(--white);
   color: var(--color, var(--rich-black-fogra-29));
   font-family: var(--ff-rubik);
